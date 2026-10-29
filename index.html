@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - Resultados</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #111827;
+            color: #ffffff;
+            padding: 1.25rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+        }
+
+        /* Container responsivo mantendo proporção 16:9 */
+        .dashboard-container {
+            width: 100%;
+            max-width: 1600px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            position: relative;
+            padding-top: 56.25%; /* Proporção 16:9 */
+        }
+
+        .dashboard-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+            background-color: #ffffff;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Processamento De matricula 26.2</h1>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <iframe 
+                title="Resultados" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiOTk1M2E1N2UtNWJkOC00ODI1LWJjNWItMmQ3MWQzNzRjNmEwIiwidCI6ImVjMzU5YmExLTYzMGItNGQyYi1iODMzLWM4ZTZkNDhmODA1OSJ9" 
+                allowFullScreen="true">
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido e hospedado via GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
